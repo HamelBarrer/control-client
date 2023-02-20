@@ -1,0 +1,27 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__label {
+  font-weight: 600;
+}
+
+.form__input {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background-color: #595252;
+  color: #fff;
+}
+
+.form__buttons {
+  display: flex;
+  flex-direction: column;
+}
