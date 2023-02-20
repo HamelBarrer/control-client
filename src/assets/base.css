@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+body {
+  background-color: #353535;
+  color: #fff;
+  font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+
+.max__content {
+  width: 100vw;
+  height: 100vh;
+}
