@@ -12,10 +12,25 @@
 }
 
 body {
-  background-color: #353535;
-  color: #fff;
+  background-color: #f4f6f7;
+  color: #333;
   font-family: 'gg sans', 'Noto Sans', 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-areas:
+    'aside header'
+    'aside main';
+  grid-template-columns: 12rem 1fr;
+  grid-template-rows: 3.5rem 1fr;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
 }
 
 .max__content {

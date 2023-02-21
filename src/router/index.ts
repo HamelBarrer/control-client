@@ -23,6 +23,10 @@ router.beforeEach(async (to, from) => {
   if (store.user.userId === 0 && to.name !== 'login') {
     return { name: 'login' };
   }
+
+  if (store.user.userId !== 0 && to.name === 'login') {
+    return { name: 'home' };
+  }
 });
 
 export default router;

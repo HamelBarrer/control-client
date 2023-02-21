@@ -2,3 +2,7 @@
 @import './cards.css';
 @import './form.css';
 @import './button.css';
+
+.main {
+  grid-area: main;
+}

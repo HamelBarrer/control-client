@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 import { useUserStore } from '../../stores/user';
 
 const store = useUserStore();
+const router = useRouter();
 
 const account = ref('');
 const password = ref('');
@@ -26,6 +28,8 @@ const handleSubmit = async () => {
     email,
     token: jwt,
   });
+
+  router.push({ name: 'home' });
 };
 </script>
 

@@ -39,5 +39,12 @@ export const useUserStore = defineStore('user', () => {
     localStorage.setItem('auth', JSON.stringify(user.value));
   };
 
-  return { user, initState, login };
+  const $reset = () => {
+    user.value.userId = 0;
+    user.value.username = '';
+    user.value.email = '';
+    user.value.token = '';
+  };
+
+  return { user, initState, login, $reset };
 });
