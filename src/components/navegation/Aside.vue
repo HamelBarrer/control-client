@@ -15,6 +15,11 @@ import { RouterLink } from 'vue-router';
               Inicio
             </RouterLink>
           </li>
+          <li class="menu__item">
+            <RouterLink :to="{ name: 'user' }" class="menu__link">
+              Usuarios
+            </RouterLink>
+          </li>
         </ul>
       </div>
     </div>

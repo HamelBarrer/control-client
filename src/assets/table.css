@@ -1,0 +1,21 @@
+.table {
+  display: flex;
+  flex-direction: column;
+}
+
+.table__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.table__data {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  justify-items: center;
+}
+
+.table__row {
+  display: contents;
+}
